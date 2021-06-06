@@ -8,22 +8,9 @@
 <body>
     <h1>Você é estrangeiro?</h1>
     De qual país você é? <input type="text" name="country" id="country">
-    <input type="button" value="verificar" onclick="search()">
+    <input type="button" value="verificar" onclick="verify()">
     <div id='resp'>
 
     </div>
-    <script>
-        function search() {
-            let p = document.querySelector('input#country')
-            let resp = document.querySelector('div#resp')
-            let country = p.value
-
-            resp.innerHTML = `Seu país é ${country}!`
-            if (country.toUpperCase() == "BRASIL" || country.toUpperCase() == "BRAZIL") {
-                resp.innerHTML += '<p>Então você é Brasileiro.'
-            } else {
-                resp.innerHTML += '<p>Então você é estrangeiro.'
-            }
-        }
-    </script>
+    <script src="scripts/country-verifier.js"></script>
 </body>
