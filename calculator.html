@@ -1,28 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+<link rel="stylesheet" type="text/css" href="calculator.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
 </head>
 <body>
-    <input type="text" value="" id="numDisplay" disabled>
-    <input type="button" value="1" onclick="numButton('1')">
-    <input type="button" value="2" onclick="numButton('2')">
-    <input type="button" value="3" onclick="numButton('3')">
-    <input type="button" value="4" onclick="numButton('4')">
-    <input type="button" value="5" onclick="numButton('5')">
-    <input type="button" value="6" onclick="numButton('6')">
-    <input type="button" value="7" onclick="numButton('7')">
-    <input type="button" value="8" onclick="numButton('8')">
-    <input type="button" value="9" onclick="numButton('9')">
-    <input type="button" value="0" onclick="numButton('0')">
-    <input type="button" value="+" onclick="add()">
-    <input type="button" value="-" onclick="subtract()">
-    <input type="button" value="×" onclick="multiply()">
-    <input type="button" value="÷" onclick="division()">
-    <input type="button" value="=" onclick="resolve()">
+    <table>
+        <tr>
+            <td><input type="text" value="" id="numDisplay" disabled></td>
+            <td><input type="button" value="=" onclick="resolve()"></td>
+        </tr>
+    </table> 
+    <table>
+        <tr>
+            <td><input type="button" value="1" onclick="numButton('1')"></td>
+            <td><input type="button" value="2" onclick="numButton('2')"></td>
+            <td><input type="button" value="3" onclick="numButton('3')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="numButton('4')"></td>
+            <td><input type="button" value="5" onclick="numButton('5')"></td>
+            <td><input type="button" value="6" onclick="numButton('6')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="numButton('7')"></td>
+            <td><input type="button" value="8" onclick="numButton('8')"></td>
+            <td><input type="button" value="9" onclick="numButton('9')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="+" onclick="add()"></td>
+            <td><input type="button" value="0" onclick="numButton('0')"></td>
+            <td><input type="button" value="-" onclick="subtract()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="×" onclick="multiply()"></td>
+            <td><input type="button" value="←" onclick="comeBack()"></td>
+            <td><input type="button" value="÷" onclick="division()"></td>
+        </tr>
+    </table>
+
     <script src="scripts/calculator.js"></script>
 </body>
 </html>
