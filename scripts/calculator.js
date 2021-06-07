@@ -29,10 +29,10 @@ function resolve() {
      result = num1 + Number(currentNum)
     } else if (operation == '-') {
      result = num1 - Number(currentNum)
-    } else if (operation == '*') {
-
-    } else {
-
+    } else if (operation == '×') {
+     result = num1 * Number(currentNum)
+    } else { 
+     result = num1 / Number(currentNum)
     }
 
     display.value = result;
