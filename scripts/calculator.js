@@ -21,9 +21,19 @@ function subtract() {
     display.value += '-'
     currentNum = ''
 }
-
+function multiply() {
+    operation = '×'
+    num1 = Number(display.value)
+    display.value += '×'
+    currentNum = ''
+}
+function division() {
+    operation = '÷'
+    num1 = Number(display.value)
+    display.value += '÷'
+    currentNum = ''
+}
 function resolve() {
-    console.log(operation)
     let result;
     if (operation == '+') {
      result = num1 + Number(currentNum)
