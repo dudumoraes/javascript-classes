@@ -34,6 +34,7 @@ function division() {
     currentNum = ''
 }
 function resolve() {
+    console.log(operation)
     let result;
     if (operation == '+') {
      result = num1 + Number(currentNum)
