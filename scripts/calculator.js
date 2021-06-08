@@ -1,14 +1,20 @@
-
-let num1;
-let currentNum;
-let operation;
-const display = document.querySelector('input#numDisplay');
-
+let num1 = '0'
+let currentNum = '0'
+let operation
+const display = document.querySelector('input#numDisplay')
+let = res
 function numButton(num) {
-    display.value += num;
-    currentNum += num;
+    display.value += num
+    currentNum += num
 }
-
+function clean(){
+    display.value = '' 
+    currentNum = ''
+}
+function point() {
+    display.value += '.'
+    currentNum += '.'
+}
 function add() {
     operation = '+'
     num1 = Number(display.value)
@@ -34,7 +40,6 @@ function division() {
     currentNum = ''
 }
 function resolve() {
-    console.log(operation)
     let result;
     if (operation == '+') {
      result = num1 + Number(currentNum)
@@ -42,9 +47,9 @@ function resolve() {
      result = num1 - Number(currentNum)
     } else if (operation == '×') {
      result = num1 * Number(currentNum)
-    } else { 
+    } else if(operation == '÷') { 
      result = num1 / Number(currentNum)
     }
+    display.value = parseFloat(result)
 
-    display.value = result;
 }
