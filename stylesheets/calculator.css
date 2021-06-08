@@ -1,0 +1,67 @@
+.btn {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 550;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+} 
+.btn1 {
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 550;
+    border: none;
+    padding: 17px; 
+    padding-block: 20px;
+    cursor: pointer;
+} 
+.btn-num {
+    background: rgb(161, 160, 255);
+    box-shadow: 0 2px 0 rgb(131, 130, 216);
+}
+.btn-sym {
+    background: rgb(160, 255, 160);
+    box-shadow: 0 2px 0 rgb(130, 214, 130);
+} 
+.btn-oper {
+    background: rgb(255, 160, 160);
+    box-shadow: 0 2px 0 rgb(216, 130, 130);
+
+} 
+.btn-num:hover{
+    background: rgb(131, 130, 216);
+    box-shadow: 0 2px 0 rgb(101, 100, 175);
+}
+.btn-num:active{
+    position: relative;
+    top: 2px;
+    box-shadow: none;
+}
+.btn-sym:hover{
+    background: rgb(130, 214, 130);
+    box-shadow: 0 2px 0 rgb(101, 175, 101);
+}
+.btn-sym:active{
+    position: relative;
+    top: 2px;
+    box-shadow: none;
+}
+.btn-oper:hover{
+    background: rgb(216, 130, 130);
+    box-shadow:0 2px 0 rgb(175, 99, 99);
+}
+.btn-oper:active{
+    position: relative;
+    top: 2px;
+    box-shadow: none;
+}
+#numDisplay{
+    font-family: Arial;
+    font-size: 14px;
+    padding: 15px;
+}
+#edge{
+    background: rgb(128, 126, 126);
+    width: 210px;
+    height: 300px;
+}
