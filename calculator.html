@@ -8,12 +8,16 @@
     <title>Calculadora</title>
 </head>
 <body>
- <div id="every">
+ <div>
+     Eduardo Henrique S. Moraes
+     <div id = "title">
+         <h1>Calculadora</h1>
+     </div>
   <div id="edge">
     <table>
         <tr>
-            <td><input type="text" value="" id="numDisplay" disabled></td>
-
+            <td><input type="text" value="" id="numDisplay" disabled size="12"></td>
+            <td><input type="button" value="=" class="btn btn-sym btn-t" onclick="resolve()"></td>
         </tr>
     </table> 
     <table>
@@ -36,13 +40,10 @@
             <td><input type="button" value="×" class="btn btn-oper btn-t" onclick="multiply()"></td>
         </tr>
         <tr>
-            <td><input type="button" value="←" class="btn1 btn-sym btn-t" onclick="comeBack()"></td>
+            <td><input type="button" value="c" class="btn btn-sym btn-t" onclick="clean()"></td>
             <td><input type="button" value="0" class="btn btn-num btn-t" onclick="numButton('0')"></td>
-            <td><input type="button" value="=" class="btn btn-sym btn-t" onclick="resolve()"></td>
+            <td><input type="button" value="." class="btn1 btn-sym btn-t" onclick="point()"></td>
             <td><input type="button" value="÷" class="btn btn-oper btn-t" onclick="division()"></td>
-        </tr>
-        <tr>
-
         </tr>
     </table>
   </div>
