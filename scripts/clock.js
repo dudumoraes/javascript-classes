@@ -8,7 +8,7 @@ function load() {
     if (hours >= 0 && hours < 12) {
         let text = 'Bom dia'
         helloDiv.innerHTML = `${text}! Agora são ${hours}h${minutes}min`
-        imagem.src = 'ibagens/manha.png'
+        imagem.src = 'https://github.com/dudumoraes/javascript-classes/issues/1#issue-937299469'
         document.body.style.background = '#fdeb81'
     } else if (hours >= 12 && hours <= 18) {
         let text = 'Boa tarde'
