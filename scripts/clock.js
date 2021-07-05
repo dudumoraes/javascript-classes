@@ -13,7 +13,7 @@ function load() {
     } else if (hours >= 12 && hours <= 18) {
         let text = 'Boa tarde'
         helloDiv.innerHTML = `${text}! Agora são ${hours}h${minutes}min`
-        imagem.src = 'ibagens/tarde.png'
+        imagem.src = 'https://github.com/dudumoraes/javascript-classes/issues/2#issue-937301057'
         document.body.style.background = '#fe7802'
     } else {
         let text = 'Boa noite'
