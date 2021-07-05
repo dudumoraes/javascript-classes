@@ -18,7 +18,7 @@ function load() {
     } else {
         let text = 'Boa noite'
         helloDiv.innerHTML = `${text}! Agora são ${hours}h${minutes}min`
-        imagem.src = 'ibagens/noite.png'
+        imagem.src = 'https://github.com/dudumoraes/javascript-classes/issues/3#issue-937301238'
         document.body.style.background  = '#23373a'
     }
 }    
