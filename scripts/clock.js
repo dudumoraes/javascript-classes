@@ -2,7 +2,7 @@ function load() {
     let helloDiv = window.document.getElementById('hello')
     let imagem = window.document.getElementById('img')
     let now = new Date()
-    let hours = '22'//now.getHours() 
+    let hours = now.getHours() 
     let minutes = now.getMinutes()
 
     if (hours >= 0 && hours < 12) {
