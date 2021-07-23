@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verificador de idade</title>
+    <link rel="stylesheet" href="stylesheets/age-verifier.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de nascimento: 
+            <input type="number" name="ageNumber" id="ageNumber"> </p>
+            <input type="radio" name="sexo" id="masc" checked>
+            <label for="masc">Masculino</label>
+            <input type="radio" name="sexo" id="femi">
+            <label for="femi">Feminino</label>
+            <p>
+                <input type="button" value="Verificar" onclick="check()">
+            </p>
+        </div>
+        <div id="res">
+            <p>preencha os campos a cima para verificar sua idade</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy;Eduardo Moraes.</p>
+    </footer>
+   <script src="scripts/age-verifier.js"></script>
+</body>
+</html>
